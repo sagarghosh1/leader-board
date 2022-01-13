@@ -114,3 +114,27 @@ hr {
     background-color: #f8d3d7;
     border-radius: 20px;
 }
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+    .players, .blogs .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog {
+        flex-direction: column;
+    }
+}
+
+/* tablr devives */
+@media only screen and (min-widht:688px) and (max-widht:992px) {
+    .container {
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+}
